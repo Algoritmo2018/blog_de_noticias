@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="icons-main/icons-main/font/bootstrap-icons.css">
+  <script src="js/bootstrap.bundle.min.js" defer></script>
+  <script src="js/scripts.js" defer></script>
+  <title>Criar Categoria</title>
+  <style>
+    a{
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar bg-dark navbar-dark  navbar-expand-sm sticky-top">
+    <div class="container ">
+      <a href="" class="navbar-brand d-flex align-items-center">
+        <i class="bi-newspaper fs-1 me-2"></i>Alda News</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar"><span
+          class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse d-lg-flex flex-column" id="menuNavbar">
+        <div class="navbar-nav ms-auto">
+          <a href="admni.html" class="nav-link  active">Home</a>
+          <a class="nav-link" href="#painel" data-bs-toggle="offcanvas">Pesquisar</a>
+          <a href="#categorias" class="nav-link" data-bs-toggle="offcanvas">Mais</a>
+          
+         
+       
+        </div>
+      </div>
+
+    </div>
+  </nav>
+  <!--Painel de pesquisa-->
+  <div class="offcanvas offcanvas-top text-bg-dark" id="painel" tabindex="1" data-bs-scroll="true"
+    data-bs-backdrop="static" style="--bs-offcanvas-heigth:100px;">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Pesquisar</h5>
+      <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="input-group mt-2">
+        <input type="search" name="" id="" class="form-control">
+        <button class="btn btn-primary">
+          <i class="bi-search"></i>
+        </button>
+      </div>
+    </div>
+
+  </div>
+  <!--fim Painel de pesquisa-->
+  <!--Painel de categorias-->
+  <div class="offcanvas offcanvas-start text-bg-dark" id="categorias" tabindex="1" data-bs-scroll="true"
+    data-bs-backdrop="static" style="--bs-offcanvas-width:250px;">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Links</h5> 
+      <button class="btn-close btn btn-light" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div style="margin-bottom: -13px;"></div>
+    <div class="offcanvas-body"> 
+     <ul class="pagination d-flex flex-column justify-content-start">
+         <li class="page-item mb-2">
+         <a href="cadastrar_artigo.html" class="nav-link">Cadastrar Artigo</a>
+        </li>
+        <li class="page-item mb-2">  
+            <a href="cadastrar_categoria.html" class="nav-link">Cadastrar categoria</a> 
+        </li>
+                <li class="page-item mb-2">  
+          <a href="cadastrar_slide.html" class="nav-link">Cadastrar Slide</a> 
+      </li>
+      <li class="page-item mb-2">  
+        <a href="slides.html" class="nav-link">Slides cadastrados</a> 
+    </li>
+      </ul>
+      </div>
+      <div style="margin-bottom: -100px;"></div>
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Editar Categorias</h5>
+    </div>
+    <div style="margin-bottom: -13px;"></div>
+    <div class="offcanvas-body"> 
+       <ul class="pagination d-flex flex-column justify-content-start ">
+         <li class="page-item mb-2">
+          <a href="editar_categoria.html" class="text-white">Arte</a>
+        </li>   <li class="page-item mb-2">
+          <a href="editar_categoria.html" class="text-white">Cultura</a>
+        </li><li class="page-item mb-2">  
+        
+
+          <a href="editar_categoria.html" class="text-white">Desporto</a>
+        </li>
+        <li class="page-item mb-2">
+          <a href="editar_categoria.html" class="text-white">Entrevista</a>
+        </li>
+        <li class="page-item mb-2">
+          <a href="editar_categoria.html" class="text-white">Economia</a>
+        </li>
+        <li class="page-item mb-2">
+          <a href="editar_categoria.html" class="text-white">Moda</a>
+        </li>
+        <li class="page-item mb-2">
+          <a href="editar_categoria.html" class="text-white">Politica</a>
+        </li>
+      
+        <li class="page-item mb-2">
+          <a href="editar_categoria.html" class="text-white">Tecnologia</a>
+        </li>
+        <li class="page-item">
+          <a href="editar_categoria.html" class="text-white">Regiões</a>
+        </li>
+        
+      
+      </ul>
+      </div>
+
+  </div>
+  <!--fim Painel de categorias-->
+ 
+  <!-- Formulario de cadastro-->
+  <div class="container d-flex justify-content-center mt-3 mb-2">
+   
+  <form>
+    <h1>Criar Categoria</h1>
+    <hr class="mb-3">
+    <div class="form-floating">
+     
+      <div class="col-md-12 mb-3">
+        <label for="validationDefaultUsername">Categoria</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroupPrepend2">C</span>
+          </div> 
+          <input type="text" class="form-control" id="validationDefaultUsername"   aria-describedby="inputGroupPrepend2" required>
+        </div>
+      </div> 
+        </div>
+      
+    
+      <button class="btn btn-primary" type="submit">Guardar</button>
+  </form></div> 
+
+  
+  <!--fim Formulario de cadastro-->
+ 
+ 
+  <div class=" d-md-none d-lg-none d-sm-none d-block"  style="height: 250px;"></div>
+<div class="col-md d-sm-none d-lg-none d-md-block d-none"  style="height: 150px;"></div>
+<div class="col-lg d-md-none d-sm-none d-lg-block d-none"  style="height: 130px;"></div>
+<div class="col-sm d-md-none d-lg-none d-sm-block d-none"  style="height: 280px;"></div>
+
+  
+ 
+ <!--Rodape-->
+  <footer   class="border-top text-bg-dark fixed-bottom">
+    <div class="container">
+        <div class="row py-3">
+            <div class="col-12 col-md-4 text-center">
+                &copy; 2024 - Alda News<br>
+                Rua Virtual Inexistente, 171, Compulândia/PC <br>
+                CPNJ 99.999.999/0001-99
+            </div>
+            <div class="col-12 col-md-4 text-center text-bg-dark">
+                <a href="privacidade.html" class="text-decoration-none text-white">
+                    Política de Privacidade
+                </a><br>
+                <a href="termos.html" class="text-decoration-none text-white">
+                    Termos de Uso
+                </a><br>
+                <a href="quemsomos.html" class="text-decoration-none text-white">
+                    Quem Somos
+                </a>
+            </div>
+            <div class="col-12 col-md-4 text-center text-bg-dark">
+                <a href="/contato.html" class="text-decoration-none text-white">
+                    Contato pelo Site
+                </a><br>
+                E-mail: <a href="mailto:email@dominio.com" class="text-decoration-none text-white">
+                    aldanews@gmail.com
+                </a><br>
+                Telefone: <a href="phone:28999990000" class="text-decoration-none  text-white">
+                    (+244) 938-092-678
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--Fim do Rodape-->
+</body>
+
+</html>

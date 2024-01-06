@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="icons-main/icons-main/font/bootstrap-icons.css">
+  <script src="js/bootstrap.bundle.min.js" defer></script>
+  <script src="js/scripts.js" defer></script>
+  <title>Blog de noticias</title>
+  <style>
+    a{
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar bg-dark navbar-dark  navbar-expand-sm sticky-top">
+    <div class="container ">
+      <a href="" class="navbar-brand d-flex align-items-center">
+        <i class="bi-newspaper fs-1 me-2"></i>Alda News</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar"><span
+          class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse d-lg-flex flex-column" id="menuNavbar">
+        <div class="navbar-nav ms-auto">
+          <a href="index.html" class="nav-link  active">Home</a>
+          <a class="nav-link" href="#painel" data-bs-toggle="offcanvas">Pesquisar</a>
+          <a href="#categorias" class="nav-link" data-bs-toggle="offcanvas">Mais</a>
+          
+         
+       
+        </div>
+      </div>
+
+    </div>
+  </nav>
+  <!--Painel de pesquisa-->
+  <div class="offcanvas offcanvas-top text-bg-dark" id="painel" tabindex="1" data-bs-scroll="true"
+    data-bs-backdrop="static" style="--bs-offcanvas-heigth:100px;">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Pesquisar</h5>
+      <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="input-group mt-2">
+        <input type="search" name="" id="" class="form-control">
+        <button class="btn btn-primary">
+          <i class="bi-search"></i>
+        </button>
+      </div>
+    </div>
+
+  </div>
+  <!--fim Painel de pesquisa-->
+  <!--Painel de categorias-->
+  <div class="offcanvas offcanvas-start text-bg-dark" id="categorias" tabindex="1" data-bs-scroll="true"
+    data-bs-backdrop="static" style="--bs-offcanvas-width:250px;">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Links</h5> 
+      <button class="btn-close btn btn-light" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div style="margin-bottom: -13px;"></div>
+    <div class="offcanvas-body"> 
+       <ul class="pagination d-flex flex-column justify-content-start">
+         <li class="page-item mb-2">
+          <a href="cadastrar-se.html" class="nav-link">Cadastrar-se</a>
+        </li><li class="page-item mb-2">  
+            <a href="login.html" class="nav-link">Login</a> 
+        </li>
+      </ul>
+      </div>
+      <div style="margin-bottom: -100px;"></div>
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Categorias</h5>
+    </div>
+    <div style="margin-bottom: -13px;"></div>
+    <div class="offcanvas-body"> 
+       <ul class="pagination d-flex flex-column justify-content-start ">
+         <li class="page-item mb-2">
+          <a href="#" class="text-white">Arte</a>
+        </li>   <li class="page-item mb-2">
+          <a href="#" class="text-white">Cultura</a>
+        </li><li class="page-item mb-2">  
+        
+
+          <a href="#" class="text-white">Desporto</a>
+        </li>
+        <li class="page-item mb-2">
+          <a href="#" class="text-white">Entrevista</a>
+        </li>
+        <li class="page-item mb-2">
+          <a href="#" class="text-white">Economia</a>
+        </li>
+        <li class="page-item mb-2">
+          <a href="#" class="text-white">Moda</a>
+        </li>
+        <li class="page-item mb-2">
+          <a href="#" class="text-white">Politica</a>
+        </li>
+      
+        <li class="page-item mb-2">
+          <a href="#" class="text-white">Tecnologia</a>
+        </li>
+        <li class="page-item">
+          <a href="#" class="text-white">Regiões</a>
+        </li>
+        
+      
+      </ul>
+      </div>
+
+  </div>
+  <!--fim Painel de categorias-->
+  <!--Slide-->
+  <div class="container py-5">
+    <div class="carousel slide carousel-fade" id="ads" data-bs-ride="carousel" data-bs-touch="true">
+        <div class="carousel-indicators">
+            <button class="active" data-bs-target="#ads"
+                data-bs-slide-to="0"></button>
+                <button data-bs-target="#ads" data-bs-slide-to="1"></button>
+                <button
+                data-bs-target="#ads" data-bs-slide-to="2"></button></div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="img/gemini.jpg" class="d-block w-100" height="300px" width="100px" alt="">
+                <div class="carousel-caption d-none d-md-block"><h5 class="text-info">"Gemini"</h5>
+                    <p class="text-info">Inteligencia artificial lançada pelo Google</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="1000">
+                <img src="img/xadrez2.jpg" class="d-block w-100" height="300px"
+                    width="100px" alt="">
+                    <div class="carousel-caption d-none d-md-block"><h5 class="text-info">"Xadrez"</h5>
+                        <p class="text-info">Considerado por muitos como um dos melhores esportes da história.</p>
+                    </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="img/espiritismo.jpg" class="d-block w-100" height="300px" width="100px" alt="">
+                <div class="carousel-caption d-none d-md-block"><h5 class="text-info">"Religião"</h5>
+                    <p class="text-info">O espirito volta para Deus.</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" data-bs-target="#ads" data-bs-slide="prev"><span
+                class="carousel-control-prev-icon"></span></button>
+        <button class="carousel-control-next" data-bs-target="#ads" data-bs-slide="next"><span
+                class="carousel-control-next-icon"></span></button>
+
+    </div>
+</div>
+ <!--Fim Slide-->
+ <!--Menu de links-->
+<div class="container"><hr class="mt-3">
+
+  <div class="row pb-3">
+      <div class="col-12">
+          <div class="d-flex flex-row justify-content-center justify-content-md-center">
+             
+              <nav class="d-inline-block me-3 ">
+                  <ul class="pagination pagination-sm my-0">
+                      <li class="page-item">
+                          <a class="page-link text-bg-dark fs-5" href="#">1</a>
+                      </li>
+                      <li class="page-item">
+                          <a class="page-link text-bg-dark fs-5" href="#">2</a>
+                      </li>
+                      <li class="page-item disabled">
+                          <a class="page-link text-bg-dark fs-5" href="#">3</a>
+                      </li>
+                      <li class="page-item">
+                          <a class="page-link text-bg-dark fs-5" href="#">4</a>
+                      </li>
+                      <li class="page-item">
+                          <a class="page-link text-bg-dark fs-5" href="#">5</a>
+                      </li>
+                      <li class="page-item">
+                          <a class="page-link text-bg-dark fs-5" href="#">6</a>
+                      </li>
+                  </ul>
+              </nav>
+          </div>
+      </div>
+  </div><hr class="mt-3"></div>
+  <!--Fim Menu de links-->
+ <!--Tecnologia-->
+ <div class="container py-5">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+    <div class="col" data-anima="esquerda"> 
+      <div class="card h-100"> 
+        <img src="img/gemini.jpg" alt="" class="card-img-top"> 
+        <div class="card-body">
+         <small>Tecnologia - JAN 04, 2024</small>
+                <h5 class="card-title">Nova inteligencia Atrifical do google</h5>
+                <h6 class="car-subtitule">Gemini</h6>
+                <p class="card-text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis a sed at
+                        minima unde eius, sapiente officia d...</p>
+                <a href="artigo_completo.html" class="card-link">Ler a materia</a> 
+        </div> 
+</div></div><div class="col" data-anima="centro"> 
+      <div class="card h-100"> 
+        <img src="img/gemini.jpg" alt="" class="card-img-top"> 
+        <div class="card-body">
+         <small>Tecnologia - JAN 04, 2024</small>
+                <h5 class="card-title">Nova inteligencia Atrifical do google</h5>
+                <h6 class="car-subtitule">Gemini</h6>
+                <p class="card-text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis a sed at
+                        minima unde eius, sapiente officia d...</p>
+                <a href="artigo_completo.html" class="card-link">Ler a materia</a> 
+        </div> 
+</div></div><div class="col" data-anima="direita"> 
+      <div class="card h-100"> 
+        <img src="img/gemini.jpg" alt="" class="card-img-top"> 
+        <div class="card-body">
+         <small>Tecnologia - JAN 04, 2024</small>
+                <h5 class="card-title">Nova inteligencia Atrifical do google</h5>
+                <h6 class="car-subtitule">Gemini</h6>
+                <p class="card-text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis a sed at
+                        minima unde eius, sapiente officia d...</p>
+                <a href="artigo_completo.html" class="card-link">Ler a materia</a> 
+        </div> 
+</div></div></div>
+</div>
+<!--Fim  Tecnologia-->
+ 
+ <!--Tecnologia-->
+ <div class="container py-5">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+    <div class="col" data-anima="esquerda"> 
+    <div class="card h-100"> 
+            <img src="img/gemini.jpg" alt="" class="card-img-top"> 
+            <div class="card-body">
+             <small>Tecnologia - JAN 04, 2024</small>
+                    <h5 class="card-title">Nova inteligencia Atrifical do google</h5>
+                    <h6 class="car-subtitule">Gemini</h6>
+                    <p class="card-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis a sed at
+                            minima unde eius, sapiente officia d...</p>
+                    <a href="artigo_completo.html" class="card-link">Ler a materia</a> 
+            </div> 
+    </div></div>
+    <div class="col" data-anima="centro"> 
+      <div class="card h-100"> 
+        <img src="img/gemini.jpg" alt="" class="card-img-top"> 
+        <div class="card-body">
+         <small>Tecnologia - JAN 04, 2024</small>
+                <h5 class="card-title">Nova inteligencia Atrifical do google</h5>
+                <h6 class="car-subtitule">Gemini</h6>
+                <p class="card-text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis a sed at
+                        minima unde eius, sapiente officia d...</p>
+                <a href="artigo_completo.html" class="card-link">Ler a materia</a> 
+        </div> 
+</div></div><div class="col" data-anima="direita"> 
+  <div class="card h-100"> 
+    <img src="img/gemini.jpg" alt="" class="card-img-top"> 
+    <div class="card-body">
+     <small>Tecnologia - JAN 04, 2024</small>
+            <h5 class="card-title">Nova inteligencia Atrifical do google</h5>
+            <h6 class="car-subtitule">Gemini</h6>
+            <p class="card-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis a sed at
+                    minima unde eius, sapiente officia d...</p>
+            <a href="artigo_completo.html" class="card-link">Ler a materia</a> 
+    </div> 
+</div></div></div>
+</div>
+<!--Fim  Tecnologia-->
+ <!--Tecnologia-->
+ <div class="container py-5">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+    <div class="col" data-anima="esquerda"> 
+      <div class="card h-100"> 
+        <img src="img/gemini.jpg" alt="" class="card-img-top"> 
+        <div class="card-body">
+         <small>Tecnologia - JAN 04, 2024</small>
+                <h5 class="card-title">Nova inteligencia Atrifical do google</h5>
+                <h6 class="car-subtitule">Gemini</h6>
+                <p class="card-text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis a sed at
+                        minima unde eius, sapiente officia d...</p>
+                <a href="artigo_completo.html" class="card-link">Ler a materia</a> 
+        </div> 
+</div></div>
+    <div class="col" data-anima="centro"> 
+      <div class="card h-100"> 
+        <img src="img/gemini.jpg" alt="" class="card-img-top"> 
+        <div class="card-body">
+         <small>Tecnologia - JAN 04, 2024</small>
+                <h5 class="card-title">Nova inteligencia Atrifical do google</h5>
+                <h6 class="car-subtitule">Gemini</h6>
+                <p class="card-text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis a sed at
+                        minima unde eius, sapiente officia d...</p>
+                <a href="artigo_completo.html" class="card-link">Ler a materia</a> 
+        </div> 
+</div></div><div class="col" data-anima="direita"> 
+  <div class="card h-100"> 
+    <img src="img/gemini.jpg" alt="" class="card-img-top"> 
+    <div class="card-body">
+     <small>Tecnologia - JAN 04, 2024</small>
+            <h5 class="card-title">Nova inteligencia Atrifical do google</h5>
+            <h6 class="car-subtitule">Gemini</h6>
+            <p class="card-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis a sed at
+                    minima unde eius, sapiente officia d...</p>
+            <a href="artigo_completo.html" class="card-link">Ler a materia</a> 
+    </div> 
+</div></div></div>
+</div>
+<!--Fim  Tecnologia-->
+<!--Menu de links-->
+<div class="container"><hr class="mt-3">
+
+<div class="row pb-3">
+    <div class="col-12">
+        <div class="d-flex flex-row justify-content-center justify-content-md-center">
+           
+            <nav class="d-inline-block me-3 ">
+                <ul class="pagination pagination-sm my-0">
+                    <li class="page-item">
+                        <a class="page-link text-bg-dark fs-5" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link text-bg-dark fs-5" href="#">2</a>
+                    </li>
+                    <li class="page-item disabled">
+                        <a class="page-link text-bg-dark fs-5" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link text-bg-dark fs-5" href="#">4</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link text-bg-dark fs-5" href="#">5</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link text-bg-dark fs-5" href="#">6</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div><hr class="mt-1"></div>
+<!--Fim Menu de links-->
+<div class=" d-md-none d-lg-none d-sm-none d-block"  style="height: 250px;"></div>
+<div class="col-md d-sm-none d-lg-none d-md-block d-none"  style="height: 150px;"></div>
+<div class="col-lg d-md-none d-sm-none d-lg-block d-none"  style="height: 130px;"></div>
+<div class="col-sm d-md-none d-lg-none d-sm-block d-none"  style="height: 280px;"></div>
+
+ <!--Rodape-->
+  <footer   class="border-top text-bg-dark fixed-bottom">
+    <div class="container">
+        <div class="row py-3">
+            <div class="col-12 col-md-4 text-center">
+                &copy; 2024 - Alda News<br>
+                Rua Virtual Inexistente, 171, Compulândia/PC <br>
+                CPNJ 99.999.999/0001-99
+            </div>
+            <div class="col-12 col-md-4 text-center text-bg-dark">
+                <a href="privacidade.html" class="text-decoration-none text-white">
+                    Política de Privacidade
+                </a><br>
+                <a href="termos.html" class="text-decoration-none text-white">
+                    Termos de Uso
+                </a><br>
+                <a href="quemsomos.html" class="text-decoration-none text-white">
+                    Quem Somos
+                </a>
+            </div>
+            <div class="col-12 col-md-4 text-center text-bg-dark">
+                <a href="/contato.html" class="text-decoration-none text-white">
+                    Contato pelo Site
+                </a><br>
+                E-mail: <a href="mailto:email@dominio.com" class="text-decoration-none text-white">
+                    aldanews@gmail.com
+                </a><br>
+                Telefone: <a href="phone:28999990000" class="text-decoration-none  text-white">
+                    (+244) 938-092-678
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--Fim do Rodape-->
+</body>
+
+</html>
